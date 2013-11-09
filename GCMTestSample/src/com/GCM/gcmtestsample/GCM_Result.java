@@ -34,9 +34,8 @@ public class GCM_Result extends Activity {
 			@Override
 			public void onClick(View v) {
 				dialog.dismiss();
-				Intent postOnFacebookWallIntent = new Intent(getApplicationContext(),GcmActivity.class);
-				postOnFacebookWallIntent.putExtra("facebookMessage", "is integrating stuff again.");
-				startActivity(postOnFacebookWallIntent);
+				Intent i = new Intent(getApplicationContext(),GcmActivity.class);
+				startActivity(i);
 			}
 		});
 
